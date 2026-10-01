@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProjectThumb from "./ProjectThumb";
+import { caseStudyHref } from "@/lib/caseStudies";
 
 const projects = [
   {
@@ -143,7 +144,7 @@ export default function Work() {
                 </p>
 
                 <Link
-                  href="#contact"
+                  href={caseStudyHref(project.name) ?? "/contact"}
                   className="mt-4 inline-flex items-center gap-1.5 font-heading text-sm font-semibold text-accent"
                 >
                   View Case Study

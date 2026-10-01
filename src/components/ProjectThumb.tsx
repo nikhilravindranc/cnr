@@ -154,13 +154,13 @@ export default function ProjectThumb({ variant }: { variant: Variant }) {
         </svg>
       );
     case "kalatrace":
-      // Gifting & reciprocal networks: warm coral to cream with orbiting nodes.
+      // Gifting & reciprocal networks: green with orbiting nodes.
       return (
         <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full">
           <defs>
             <linearGradient id="kala-g" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#F4A57A" />
-              <stop offset="100%" stopColor="#E96A4F" />
+              <stop offset="0%" stopColor="#4FBF8B" />
+              <stop offset="100%" stopColor="#1F7A52" />
             </linearGradient>
           </defs>
           <rect width="300" height="400" fill="url(#kala-g)" />
@@ -172,13 +172,13 @@ export default function ProjectThumb({ variant }: { variant: Variant }) {
         </svg>
       );
     case "sosholdings":
-      // Multi-brand conglomerate: neutral graphite with a structured grid.
+      // Multi-brand conglomerate: SOS Holdings blues (sosholdings.net).
       return (
         <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full">
           <defs>
             <linearGradient id="sos-g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#3a3f47" />
-              <stop offset="100%" stopColor="#1c1f24" />
+              <stop offset="0%" stopColor="#00497C" />
+              <stop offset="100%" stopColor="#15456B" />
             </linearGradient>
           </defs>
           <rect width="300" height="400" fill="url(#sos-g)" />
@@ -190,13 +190,13 @@ export default function ProjectThumb({ variant }: { variant: Variant }) {
         </svg>
       );
     case "eftmra":
-      // Training & booking: warm teal with a calendar/booking motif.
+      // Training & booking: EFTMRA teal/navy with gold (eftmraindia.com).
       return (
         <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full">
           <defs>
             <linearGradient id="eftmra-g" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#1f7a6c" />
-              <stop offset="100%" stopColor="#123f38" />
+              <stop offset="0%" stopColor="#4A9DAE" />
+              <stop offset="100%" stopColor="#1A3B4C" />
             </linearGradient>
           </defs>
           <rect width="300" height="400" fill="url(#eftmra-g)" />
@@ -210,34 +210,34 @@ export default function ProjectThumb({ variant }: { variant: Variant }) {
         </svg>
       );
     case "ovidmedia":
-      // Brand refresh & media: magenta-to-violet with abstract play shapes.
+      // Brand refresh & media: Ovid navy with orange (ovid-media.com).
       return (
         <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full">
           <defs>
             <linearGradient id="ovid-g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#7A2E8C" />
-              <stop offset="100%" stopColor="#B23A73" />
+              <stop offset="0%" stopColor="#132952" />
+              <stop offset="100%" stopColor="#0F253E" />
             </linearGradient>
           </defs>
           <rect width="300" height="400" fill="url(#ovid-g)" />
-          <polygon points="120,140 200,190 120,240" fill="#ffffff" opacity="0.3" />
-          <circle cx="220" cy="120" r="40" fill="#ffffff" opacity="0.12" />
+          <polygon points="120,140 200,190 120,240" fill="#F8521F" opacity="0.95" />
+          <circle cx="220" cy="120" r="40" fill="#F8521F" opacity="0.18" />
         </svg>
       );
     case "melrose":
-      // Heritage brand: deep burgundy with a gold ornamental line.
+      // Heritage brand: Melrose blues with a warm-grey ornamental line (melrose-nl.com).
       return (
         <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full">
           <defs>
             <linearGradient id="mel-g" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#5c1f2b" />
-              <stop offset="100%" stopColor="#2d0f16" />
+              <stop offset="0%" stopColor="#0874B4" />
+              <stop offset="100%" stopColor="#004669" />
             </linearGradient>
           </defs>
           <rect width="300" height="400" fill="url(#mel-g)" />
-          <circle cx="150" cy="200" r="60" fill="none" stroke="#D9B26C" strokeOpacity="0.6" strokeWidth="2" />
-          <circle cx="150" cy="200" r="3" fill="#D9B26C" />
-          <path d="M90 200h20M190 200h20M150 140v20M150 240v20" stroke="#D9B26C" strokeOpacity="0.5" strokeWidth="2" />
+          <circle cx="150" cy="200" r="60" fill="none" stroke="#F4F3F0" strokeOpacity="0.6" strokeWidth="2" />
+          <circle cx="150" cy="200" r="3" fill="#F4F3F0" />
+          <path d="M90 200h20M190 200h20M150 140v20M150 240v20" stroke="#F4F3F0" strokeOpacity="0.5" strokeWidth="2" />
         </svg>
       );
   }

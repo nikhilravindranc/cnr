@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProjectThumb from "@/components/ProjectThumb";
+import { caseStudyHref } from "@/lib/caseStudies";
 
 const projects = [
   {
@@ -24,7 +25,7 @@ const projects = [
     name: "Social DNA Labs",
     description:
       "A long-running digital transformation company going through multiple stages of repositioning as the digital landscape changed. The work involved repeatedly reshaping the website, its information architecture, content, UX, technology and positioning — from SEO-focused service pages to a more transformation-led structure, and most recently toward an AI-era proposition. The latest revamp introduced new capability pillars, refreshed the visual language, removed outdated content, brought the EVOQ product suite into the broader ecosystem, and moved the platform from WordPress/PHP to a modern Next.js and Payload CMS stack. The work combined strategy, research, content, UX/UI, technology decisions and AI-assisted execution.",
-    hasCaseStudy: false,
+    hasCaseStudy: true,
   },
   {
     variant: "trident" as const,
@@ -127,7 +128,7 @@ export default function WorkGrid() {
 
                 {project.hasCaseStudy && (
                   <Link
-                    href="#contact"
+                    href={caseStudyHref(project.name) ?? "/contact"}
                     className="mt-4 inline-flex w-fit items-center gap-1.5 font-heading text-sm font-semibold text-accent"
                   >
                     View Case Study
